@@ -1,57 +1,48 @@
-//! Uncomment the lines with this comment tag "//" and leave the rest as they are
-
-const mongoose = require("mongoose");
+const path = require("path");
 const express = require("express");
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+
+dotenv.config({ path: path.join(__dirname, ".env.local") });
 
 const app = express();
+const port = process.env.PORT || 5000;
+const mongoUri = process.env.MONGO_URI;
 
-// require("dotenv").config();
-
-//* Configuring CORS
-// const allowedOrigin = "http://localhost:3000"; //? Allowed origin (frontend URL)
-// const allowedMethods = ["POST"]; //? Allowed methods
-
-// app.use((req, res, next) => {
-//   res.header("Access-Control-Allow-Origin", allowedOrigin);
-//   res.header("Access-Control-Allow-Methods", allowedMethods.join(", ")); //? Join methods into a comma-separated string if > 1 method
-//   res.header("Access-Control-Allow-Headers", "Content-Type"); //? Allow Content-Type
-//   next();
-// });
-
-//* Calling routes
-//const exampleRoutes = require("./routes/example.js");
-
-//* Middleware
-// app.use(express.json()); //? This allows us to access the req data from the req handler
-
-//* Using routes
-//app.use("/api/examples", exampleRoutes);
-
-//* Print the request type and path
-// app.use((req) => {
-//   console.log(req.path, req.method);
-//   next();
-// });
-
-// mongoose
-//   .connect(process.env.MONGO_URI)
-//   .then(() => {
-//     app.listen(process.env.PORT, () => {
-//       console.log("listening on port 5000");
-//     });
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//   });
-
-const port = 3000;
+app.use(express.json());
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.json({
+    status: "ok",
+    message: "Anamour Guesthouse API is running",
+  });
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+app.get("/health", (req, res) => {
+  res.json({
+    status: "ok",
+    database:
+      mongoose.connection.readyState === 1 ? "connected" : "disconnected",
+  });
 });
 
-//module.exports = mongoose; //? Export the mongoose connection for use in other files
+const startServer = async () => {
+  if (!mongoUri) {
+    console.error("MONGO_URI is missing from server/.env.local");
+    process.exit(1);
+  }
+
+  try {
+    await mongoose.connect(mongoUri);
+
+    app.listen(port, () => {
+      console.log(`Server listening on port ${port}`);
+      console.log("MongoDB Atlas connected");
+    });
+  } catch (error) {
+    console.error("Failed to connect to MongoDB Atlas:", error.message);
+    process.exit(1);
+  }
+};
+
+startServer();
