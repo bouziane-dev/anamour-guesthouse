@@ -2,6 +2,7 @@ const path = require("path");
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const roomRoutes = require("./routes/roomRoutes");
 
 dotenv.config({ path: path.join(__dirname, ".env.local") });
 
@@ -10,6 +11,8 @@ const port = process.env.PORT || 5000;
 const mongoUri = process.env.MONGO_URI;
 
 app.use(express.json());
+
+app.use("/api/rooms", roomRoutes);
 
 app.get("/", (req, res) => {
   res.json({

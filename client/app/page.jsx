@@ -1,13 +1,7 @@
-import React from 'react'
+import { redirect } from '@/i18n/navigation'
 
-const Home = () => {
-  return (
-    <section className='py-24'>
-      <div className='container'>
-        <h1 className='text-3xl font-bold'>Hello developers</h1>
-      </div>
-    </section>
-  )
+export const dynamic = 'force-dynamic'
+
+export default function RootPage() {
+  redirect({ href: '/', locale: 'en' })
 }
-
-export default Home

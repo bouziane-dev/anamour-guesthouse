@@ -1,0 +1,52 @@
+{
+  "Nav": {
+    "home": "الرئيسية",
+    "rooms": "الغرف",
+    "prices": "الأسعار",
+    "availability": "التوفر",
+    "galleryTours": "المعرض والجولات",
+    "bookings": "الحجوزات",
+    "guests": "الضيوف",
+    "dashboard": "لوحة التحكم",
+    "food": "المأكولات",
+    "homeTour": "جولة في الدار",
+    "contact": "اتصل بنا",
+    "language": "English"
+  },
+  "Home": {
+    "heroTitleLine1": "الضوء الذهبي",
+    "heroTitleLine2": "للصحراء",
+    "heroSubtitle": "دار ضيافة أصيلة في وادي مزاب",
+    "checkAvailability": "تحقق من التوفر",
+    "welcomeTitle": "مرحباً بكم في دار غرداية",
+    "welcomeText": "ادخل إلى دار مضيئة وهادئة، حيث يبطؤ الوقت وتحتضنك دفء الصحراء. بُنيت بروح العمارة الخالدة لوادي مزاب، لتمنح ضيوفها مساحة للراحة، الأصالة، والضيافة الجنوبية.",
+    "feature1Title": "تهوية طبيعية",
+    "feature1Text": "تصميم تقليدي يسمح بتدفق الهواء",
+    "feature2Title": "فناء ذهبي",
+    "feature2Text": "مغمور بضوء الصحراء",
+    "feature3Title": "وادي مزاب",
+    "feature3Text": "موقع تراثي عالمي",
+    "feature4Title": "مأكولات محلية",
+    "feature4Text": "نكهات جنوبية أصيلة",
+    "sanctuariesTitle": "أماكن الإقامة",
+    "viewAllRooms": "عرض كل الغرف",
+    "royalSuiteTitle": "الجناح الملكي",
+    "royalSuiteText": "أوسع خيار للإقامة مع شرفة خاصة تطل على الوادي.",
+    "royalSuitePrice": "ابتداءً من 25,000 دج / الليلة",
+    "traditionalRoomTitle": "الغرفة التقليدية",
+    "traditionalRoomText": "ديكور أصيل مع راحة عصرية حول الفناء الداخلي.",
+    "traditionalRoomPrice": "ابتداءً من 15,000 دج / الليلة",
+    "galleryEyebrow": "المعرض والجولات",
+    "galleryTitle": "اكتشف أجواء الدار قبل وصولك.",
+    "galleryText": "استكشف الأفنية الدافئة، الغرف الهادئة، التفاصيل اليدوية، الأطباق المحلية، والجولات الثقافية في غرداية.",
+    "openGallery": "فتح المعرض"
+  },
+  "Footer": {
+    "description": "دار ضيافة أصيلة في وادي مزاب، تجمع بين الهدوء، التقاليد، المأكولات المحلية، والضيافة الجنوبية الدافئة.",
+    "explore": "استكشف",
+    "contact": "اتصل بنا",
+    "address": "غرداية، الجزائر",
+    "phone": "+213 000 00 00 00",
+    "email": "contact@darelghardaia.com"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "Nav": {
+    "home": "Home",
+    "rooms": "Rooms",
+    "prices": "Prices",
+    "availability": "Availability",
+    "galleryTours": "Gallery & Tours",
+    "bookings": "Bookings",
+    "guests": "Guests",
+    "dashboard": "Dashboard",
+    "food": "Food",
+    "homeTour": "Home Tour",
+    "contact": "Contact",
+    "language": "العربية"
+  },
+  "Home": {
+    "heroTitleLine1": "The Golden Light of",
+    "heroTitleLine2": "the Sahara",
+    "heroSubtitle": "An Authentic Guest House in the M'zab Valley",
+    "checkAvailability": "Check Availability",
+    "welcomeTitle": "Welcome to Dar El Ghardaïa",
+    "welcomeText": "Step into a beautifully lit riad, where time slows down and the warmth of the desert embraces you. Built with the timeless architecture of the M'zab Valley, our guest house offers a sanctuary of peace, tradition, and southern hospitality.",
+    "feature1Title": "Natural Cooling",
+    "feature1Text": "Traditional airflow design",
+    "feature2Title": "Golden Courtyard",
+    "feature2Text": "Bathed in Saharan light",
+    "feature3Title": "M'zab Valley",
+    "feature3Text": "UNESCO Heritage site",
+    "feature4Title": "Local Cuisine",
+    "feature4Text": "Authentic southern flavors",
+    "sanctuariesTitle": "Our Sanctuaries",
+    "viewAllRooms": "View All Rooms",
+    "royalSuiteTitle": "The Royal Suite",
+    "royalSuiteText": "Our most spacious offering with a private terrace overlooking the valley.",
+    "royalSuitePrice": "From 25,000 DZD / night",
+    "traditionalRoomTitle": "Traditional Room",
+    "traditionalRoomText": "Authentic decor with modern comfort, centered around the courtyard.",
+    "traditionalRoomPrice": "From 15,000 DZD / night",
+    "galleryEyebrow": "Gallery & Tours",
+    "galleryTitle": "Discover the atmosphere before you arrive.",
+    "galleryText": "Explore warm courtyards, quiet rooms, handmade details, local food, and guided experiences around Ghardaïa.",
+    "openGallery": "Open Gallery"
+  },
+  "Footer": {
+    "description": "An authentic guest house in the M'zab Valley, designed around calm, tradition, local cuisine, and warm southern hospitality.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "address": "Ghardaïa, Algeria",
+    "phone": "+213 000 00 00 00",
+    "email": "contact@darelghardaia.com"
+  }
+}
